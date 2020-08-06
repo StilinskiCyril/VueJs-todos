@@ -22,4 +22,9 @@ class Todo extends Model
     {
         return ucfirst($value);
     }
+
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
 }
